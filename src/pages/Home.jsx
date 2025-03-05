@@ -17,7 +17,7 @@ const Home = () => {
       <h1 className="text-2xl font-bold">Shopee Clone</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {products.map((product) => (
-          <div key={product.id} className="border p-2 rounded-xl">
+          <div key={product.id} className="border p-2 rounded-xl shadow-lg">
             <img src={product.image} alt={product.title} className="h-40 w-full object-cover" />
             <h2 className="text-sm font-semibold">{product.title}</h2>
             <p className="text-red-500">${product.price}</p>
